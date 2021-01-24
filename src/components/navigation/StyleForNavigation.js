@@ -34,8 +34,8 @@ export const NavigationButton = styled.button`
 
 export const Logo = styled.h1`
     color: ${colors.black};
-    font-weight: 700;
-    font-size: 2.6rem;
+    font-weight: 800;
+    font-size: 2.4rem;
     justify-self: start;
     cursor: pointer;
 `

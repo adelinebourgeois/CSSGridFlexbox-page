@@ -1,8 +1,9 @@
 
 const colors = {
     greyBackground: '#f9f9f9',
+    lines: '#f3f3f5',
     greyLight: '#f2f3f5',
-    grey: '#babbbf',
+    grey: '#9d9ea4',
     yellow: '#fea31a',
     blue: '#4277f9',
     white: '#FFF',

@@ -1,5 +1,5 @@
 import React from "react";
-import {Header, NavigationNav, NavigationUl, NavigationLiContainer, NavigationButton, Logo} from "./StyleForNavigation";
+import {Header, NavigationNav, NavigationUl, NavigationButton, Logo} from "./StyleForNavigation";
 
 const Navigation = () => {
     return (

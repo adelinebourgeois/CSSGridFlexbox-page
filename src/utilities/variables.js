@@ -12,7 +12,6 @@ const colors = {
 
 const size = {
     layoutWidthMax: '780px',
-    columnCountMax: 4,
 }
 
 export {colors, size};

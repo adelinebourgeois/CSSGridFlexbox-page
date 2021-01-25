@@ -2,19 +2,19 @@ import styled from 'styled-components';
 import {colors} from "../../utilities/variables";
 
 export const InfoStyled = styled.div`
-    background-color: ${colors.greyLight};
     text-align: start;
-    z-index: 1;
 `
 
 export const InfoTitle = styled.p`
     color: ${colors.black};
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 10px;
-    ${props => props.border ? `border-left: 2px solid ${colors.blue}`  : ''};
+    border-left: 2px solid ${colors.blue};
+    padding-left: 15px;
 `
 
 export const InfoText = styled.p`
     font-size: 1.2rem;
+    padding-left: 15px;
 `

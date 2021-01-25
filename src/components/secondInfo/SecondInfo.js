@@ -1,8 +1,8 @@
 import React from "react";
-import {InfoStyled, InfoTitle, InfoText} from "./StyleForInfo";
+import {InfoStyled, InfoTitle, InfoText} from "./StyleForSecondInfo";
 
 
-const Info = ({title, children}) => {
+const SecondInfo = ({title, children}) => {
     return (
         <InfoStyled>
             <InfoTitle>{title}</InfoTitle>
@@ -11,4 +11,4 @@ const Info = ({title, children}) => {
     )
 }
 
-export default Info;
+export default SecondInfo;

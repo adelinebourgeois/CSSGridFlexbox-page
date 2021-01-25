@@ -13,6 +13,7 @@ import Video from "./components/video/Video";
 import Title from "./components/title/Title";
 import Button from "./components/button/Button";
 import Info from "./components/info/Info";
+import SecondInfo from "./components/secondInfo/SecondInfo";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
                         <a href='#'>Check the schedule !</a>
                     </div>
                     <div className='firstSectionGrid__info'>
-                        <Info background title='Agustus 8, Bengkulu'>Lorem ipsum dolor sit amet, consectetur.</Info>
+                        <Info title='Agustus 8, Bengkulu'>Lorem ipsum dolor sit amet, consectetur.</Info>
                     </div>
                 </FirstSectionGrid>
                 <SecondSectionGrid>
@@ -48,9 +49,9 @@ function App() {
                     </div>
                 </SecondSectionGrid>
                 <ThirdSectionGrid>
-                    <Info border title='Certificate'>Nam lectus ligula, porttitor nec nulla eu,</Info>
-                    <Info border title='Material Book'>imperdiet pellentesque nisl. Curabitur porttitor leo vitae risus venenatis auctor.</Info>
-                    <Info border title='Our Mission'>Aenean quam sem, condimentum condimentum lorem eu.</Info>
+                    <SecondInfo border title='Certificate'>Nam lectus ligula, porttitor nec nulla eu,</SecondInfo>
+                    <SecondInfo border title='Material Book'>imperdiet pellentesque nisl. Curabitur porttitor leo vitae risus venenatis auctor.</SecondInfo>
+                    <SecondInfo border title='Our mission'>Aenean quam sem, condimentum condimentum lorem eu.</SecondInfo>
                 </ThirdSectionGrid>
             </LayoutContainer>
         </Background>

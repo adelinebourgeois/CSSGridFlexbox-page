@@ -52,6 +52,7 @@ export const FirstSectionGrid = styled.section`
         padding-left: 40px;
         width: 95%;
         grid-column: 2 / span 2;
+        z-index: 1;
     }
     & .firstSectionGrid__button {
         grid-column: 3;
@@ -77,14 +78,14 @@ export const FirstSectionGrid = styled.section`
         grid-row: 3;
         grid-column: 2;
         & div {
-         padding: 16px 30px;
+         padding: 16px 40px;
         }
     }
 `
 export const SecondSectionGrid = styled(FirstSectionGrid)`
     grid-template-rows: 40px 40px;
-    grid-template-columns: 29% 1fr;
-    grid-column-gap: 203px;
+    grid-template-columns: 20% 1fr;
+    grid-column-gap: 35%;
     padding-bottom: 67px;
     grid-row-gap: 30px;
     & .secondSectionGrid__title {
@@ -110,7 +111,6 @@ export const ThirdSectionGrid = styled(FirstSectionGrid)`
     grid: 1fr/ 50% 30% 1fr;
     padding-bottom: 18px;
     & div p {
-        padding-left: 15px;
-        width: 65%;
+        width: 70%;
     }
 `

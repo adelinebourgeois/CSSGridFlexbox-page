@@ -29,6 +29,7 @@ button {
   font-family: inherit;
   padding: 0;
   cursor: pointer;
+  outline: none;
 }
 
 code {

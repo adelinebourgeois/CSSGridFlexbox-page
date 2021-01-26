@@ -8,6 +8,7 @@ export const Background = styled.div`
 export const LayoutContainer = styled.div`
     max-width: ${size.layoutWidthMax};
     margin: 0 auto;
+    padding: 0 10px;
 `
 
 export const StyledBackgroundLines = styled.div`
@@ -37,7 +38,7 @@ export const VerticalLine = styled.div`
 export const FirstSectionGrid = styled.section`
     display: grid;
     grid: 1fr/ 50% 33% 17% 1fr;
-    grid-template-rows: 199px 87px 94px;
+    grid-template-rows: 199px 89px 96px;
     padding-bottom: 130px;
     position: relative;
     & div.video__background {
@@ -53,19 +54,21 @@ export const FirstSectionGrid = styled.section`
         width: 95%;
         grid-column: 2 / span 2;
         z-index: 1;
+        display: flex;
+        align-items: center;
     }
     & .firstSectionGrid__button {
         grid-column: 3;
+        display: flex;
         & button {
-            padding: 27px 30px;
+            padding: 0 30px;
         }
     }
     & .firstSectionGrid__a {
         grid-row: 3;
         grid-column: 1;
         align-items: center;
-        display: grid;
-        justify-content: flex-start;
+        display: flex;
         padding-left: 34px;
         width: 30%;
         & a {

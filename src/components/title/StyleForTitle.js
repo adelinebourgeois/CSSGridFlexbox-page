@@ -17,7 +17,7 @@ export const TitleStyled = styled.h2`
             z-index: -1;
             width: 147px;
             height: 50px;
-            top: 58px;
+            top: 76px;
         }
     }
 `

@@ -11,7 +11,7 @@ const colors = {
 }
 
 const size = {
-    layoutWidthMax: '780px',
+    layoutCol: 6
 }
 
 export {colors, size};

@@ -4,13 +4,15 @@ import {colors} from "../../utilities/variables";
 export const Header = styled.header`
     display: flex;
     justify-content: space-between;
-    padding-top: 35px;
-    padding-bottom: 86px;
+    margin-top: 3.5rem;
+    margin-bottom: 8.6rem;
+    grid-column: center-start / center-end;
+    grid-row: 1;
 `
 
 export const NavigationNav = styled.nav`
-    width: 45%;
     display: flex;
+    flex: 0 0 67%;
 `
 
 export const NavigationUl = styled.ul`
@@ -23,10 +25,6 @@ export const NavigationButton = styled.button`
     color: ${colors.black};
     font-weight: 600;
     font-size: 1.2rem;
-    cursor: pointer;
-    border: none;
-    padding-bottom: 5px;
-    background: none;
     &:hover, &:focus {
         border-bottom: 1px solid ${colors.yellow}
     }

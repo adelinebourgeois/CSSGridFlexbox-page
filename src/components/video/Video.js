@@ -1,17 +1,42 @@
 import React from "react";
-import {VideoStyled} from "./StyleForVideo";
+import styled from "styled-components";
+import {colors} from "../../utilities/variables";
+
+const VideoContainer = styled.div`
+   position: relative;
+   overflow: hidden;
+   padding-top: 56.25%;
+   grid-row: 1 / span 2;
+   & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+   }
+`
+
+const VideoBackground = styled.div`
+    background-color: ${colors.greyLight};
+    width: 15rem;
+    position: absolute;
+    height: 15rem;
+    left: -2rem;
+    top: -2rem;
+`
 
 
-const Video = () => {
+const Video = ({background}) => {
     return (
-        <VideoStyled>
-            <video
-                width='100%'
-                height='100%'
-                controls
-                autoPlay={false}
-                src='https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4' />
-        </VideoStyled>
+        <>
+            {background && <VideoBackground></VideoBackground>}
+            <VideoContainer>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-jj-rHDjCvM" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen></iframe>
+            </VideoContainer>
+        </>
     )
 }
 

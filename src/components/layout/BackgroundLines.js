@@ -7,14 +7,12 @@ import {
 
 const BackgroundLines= () => {
     return (
-        <StyledBackgroundLines>
-            <BackgroundLinesContainer>
-                <VerticalLine></VerticalLine>
-                <VerticalLine></VerticalLine>
-                <VerticalLine></VerticalLine>
-                <VerticalLine></VerticalLine>
-            </BackgroundLinesContainer>
-        </StyledBackgroundLines>
+        <BackgroundLinesContainer>
+            <VerticalLine></VerticalLine>
+            <VerticalLine></VerticalLine>
+            <VerticalLine></VerticalLine>
+            <VerticalLine></VerticalLine>
+        </BackgroundLinesContainer>
     )
 }
 

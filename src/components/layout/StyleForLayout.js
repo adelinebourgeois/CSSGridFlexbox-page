@@ -2,19 +2,10 @@ import styled from 'styled-components';
 import {colors, size} from "../../utilities/variables";
 
 export const BackgroundGrid = styled.div`
+    background: linear-gradient(to right, ${colors.white} 35%, ${colors.greyBackground} 35%);
     display: grid;
     grid-template-rows: repeat(4, min-content);
     grid-template-columns: [margin-start] minmax(6rem, 1fr) [margin-end center-start] repeat(${size.layoutCol}, [col-start] minmax(min-content, 14rem) [col-end]) [center-end margin-start] minmax(6rem, 1fr) [margin-end];
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 32%;
-      right: 0;
-      background: ${colors.greyBackground};
-      z-index:-1;
-  }
 `
 
 export const StyledBackgroundLines = styled.div`
